@@ -69,7 +69,7 @@ trait QueryCacheable
      * @param  \Illuminate\Database\Eloquent\Collection|null  $pivotedModels
      * @return array
      */
-    public function getCacheTagsToInvalidateOnUpdate(?$relation = null, ?Collection $pivotedModels = null): array
+    public function getCacheTagsToInvalidateOnUpdate(?string $relation = null, ?Collection $pivotedModels = null): array
     {
         /** @var \Illuminate\Database\Eloquent\Model $this */
         return $this->getCacheBaseTags();
