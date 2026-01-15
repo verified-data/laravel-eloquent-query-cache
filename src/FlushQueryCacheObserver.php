@@ -150,7 +150,7 @@ class FlushQueryCacheObserver
      *
      * @throws Exception
      */
-    protected function invalidateCache(Model $model, $relation = null, $pivotedModels = null): void
+    protected function invalidateCache(Model $model, ?$relation = null, ?$pivotedModels = null): void
     {
         $class = get_class($model);
 
